@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+#header-image {
+    display: flex;
+    justify-content: center;
+}
+
+#header-title,
+#local-time-container {
+    padding: 2rem 0;
+}
+
+#time-from-now-input-header {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+#time-from-now-inputs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+#inputs-container {
+    padding-bottom: 2rem;
+    border: 1px solid;
+    position: relative
+}
+
+#header-title {
+    text-align: center;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+#outter-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.calculated-time {
+    background-color: gray;
+    padding: 0.5rem;
+}
+
+#time-from-now-inputs-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    margin-right: 1.5rem;
+    width: 4rem;
+}
+
+@media screen and (max-width: 568px) {
+    #inputs {
+        flex-direction: column;
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #calculate-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .input-container {
+        margin-left: 1rem;
+    }
+
+    #header-title {
+        font-size: 1.5rem;
+    }
+
+    #time-from-now-input-header {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #calculated-time-from-now-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0.5rem;
+    }
+
+    .calculated-time {
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    #local-time-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

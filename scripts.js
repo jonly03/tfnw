@@ -37,8 +37,8 @@ $(document).ready(function () {
     function createLocalTimeElement() {
         // Dynamically create local time <p id='local-time-text'></p> element using jQuery
         /*
-        Goal:
-        <p>Your local time is: <span id='local-time-calculated' class='calculated-time'></span></p>
+        Goal: return 
+        <p id='local-time-text'>Your local time is: <span id='local-time-calculated' class='calculated-time'></span></p>
         */
         var timeElement = $('<p></p>');
         timeElement.attr('id', 'local-time-text')

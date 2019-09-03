@@ -184,7 +184,7 @@ body {
     font-size: 2rem;
 }
 
-#outter-container {
+#time-container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -217,6 +217,19 @@ body {
     width: 4rem;
 }
 
+@media screen and (max-width: 710px) {
+    #calculated-time-from-now-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0.5rem;
+    }
+
+    .calculated-time {
+        margin-top: 0.5rem;
+    }
+}
+
 @media screen and (max-width: 568px) {
     #inputs {
         flex-direction: column;
@@ -227,18 +240,12 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        margin-left: 1.5rem;
         margin-bottom: 0.5rem;
+        margin-left: 1rem;
     }
 
     #calculate-button {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    .input-container {
-        margin-left: 1rem;
     }
 
     #header-title {
@@ -247,19 +254,6 @@ body {
 
     #time-from-now-input-header {
         font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    #calculated-time-from-now-text {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 0.5rem;
-    }
-
-    .calculated-time {
-        margin-top: 0.5rem;
     }
 }
 
